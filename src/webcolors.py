@@ -38,7 +38,7 @@ supported specifications are: {supported}.".format(
     supported=",".join(SUPPORTED_SPECIFICATIONS)
 )
 
-IntegerRGB = NamedTuple("IntegerRGB", [("red", int), ("green", int), ("blue", int)])
+IntegerRGB = NamedTuple("IntegerRGB", [(int), (int), (int)])
 PercentRGB = NamedTuple("PercentRGB", [("red", str), ("green", str), ("blue", str)])
 HTML5SimpleColor = NamedTuple(
     "HTML5SimpleColor", [("red", int), ("green", int), ("blue", int)]
