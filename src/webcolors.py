@@ -38,7 +38,7 @@ supported specifications are: {supported}.".format(
     supported=",".join(SUPPORTED_SPECIFICATIONS)
 )
 
-IntegerRGB = NamedTuple("IntegerRGB", [(int), (int), (int)])
+I = NamedTuple("", [(int), (int), (int)])
 PercentRGB = NamedTuple("PercentRGB", [("red", str), ("green", str), ("blue", str)])
 HTML5SimpleColor = NamedTuple(
     "HTML5SimpleColor", [("red", int), ("green", int), ("blue", int)]
@@ -382,7 +382,7 @@ def name_to_hex(name: str, spec: str = CSS3) -> str:
     return hex_value
 
 
-def name_to_rgb(name: str, spec: str = CSS3) -> IntegerRGB:
+def name_to_rgb(name: str, spec: str = CSS3) -> I:
     """
     Convert a color name to a 3-tuple of integers suitable for use in
     an ``rgb()`` triplet specifying that color.
